@@ -1,0 +1,192 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    align-items: center;
+    background: rgb(226, 139, 139);
+    width: 100%;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+}
+nav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    justify-content: flex-start;
+    vertical-align: middle;
+    width: 48%;
+    padding-left: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2px;
+    right: 20px;
+    justify-content: flex-end;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+    bottom: 5px;
+}
+
+.nav-links li {
+    padding: 5px 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav-links a:hover {
+    color: rgb(238, 199, 0);
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+}
+.intro {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 50px;
+    position: relative;
+}
+
+.intro-text {
+    margin: 150px 50px;
+    max-width: 60%;
+    z-index: 1;
+}
+
+
+
+.intro-text h2 {
+    color: #f0a500;
+    font-size: 18px;
+}
+
+.intro-text h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #666;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #f0a500;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
+.intro-image {
+    position: sticky;
+    top: 0;
+    right: 0;
+    max-width: 35%;
+    height: auto;
+    z-index: 2;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 300px;
+}
+/* .intro-image {
+    position: relative;
+    z-index: 1;
+    width: 45%;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 500px;
+} */
+
+.projects {
+    width: 100%;
+    background-color: #f0a500;
+}
+
+.projects .pro-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pro-header h1 {
+    color: #fff;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+@media (max-width: 975px) {
+    .intro-text {
+        margin: 10px 20px;
+        max-width: 70%;
+        z-index: 1;
+    }
+
+    .projects .pro-header {
+        text-align: left;
+    }
+}
+
+@media (max-width: 742px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        margin: 50px 20px;
+        max-width: 100%;
+    }
+
+    .intro-image {
+        margin: 20px 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
